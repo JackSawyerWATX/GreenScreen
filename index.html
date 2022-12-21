@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src='https://tinyurl.com/yxs65fhm'></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Green Screen Online</h2>
+
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+    <canvas id="canvas3"></canvas>
+
+    <p>
+        Foreground: <input type="file" id="fgfile" multiple="false" accept="images/*" onchange="loadForegraoundImage()">
+        Background: <input type="file" id="bgfile" multiple="false" accept="images/*" onchange="loadBackgraoundImage()">
+    </p>
+
+    <p>
+        <input type="button" id="gray" value="Create Composite" onclick="createComp()">
+        <input type="button" id="gray" value="Clear Composite" onclick="clearComp()">
+    </p>
+</body>
+
+</html>
